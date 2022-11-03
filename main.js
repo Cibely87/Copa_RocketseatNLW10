@@ -23,28 +23,22 @@ function createCard(date, day, games) {
   `
 }
 
-document.querySelector('#app').innerHTML = `
-  <header>
-    <img src="./assents/logo.svg" alt="Logo app copa" />
-  </header>
-  <main id="cards">
-    ${createCard('24/11', 'Quinta-feira',
-  createGame("Suica", "07:00", "Camaroes") +
-  createGame("Uruguay", "10:00", "SouthCorean") +
-  createGame("Portugal", "13:00", "Gana") +
-  createGame("Brazil", "16:00", "Serbia")
-)}
-    ${createCard('28/11', 'Segunda-feira',
-  createGame("Camaroes", "07:00", "Serbia") +
-  createGame("SouthCorean", "10:00", "Gana") +
-  createGame("Suica", "13:00", "Brazil") +
-  createGame("Uruguay", "16:00", "Portugal")
-)}
-    ${createCard('29/11', 'Terça-feira',
-  createGame("Argentina", "07:00", "Britshi") +
-  createGame("Armenia", "10:00", "Hungary") +
-  createGame("Camaroes", "13:00", "Uruguay") +
-  createGame("Japan", "16:00", "Brazil")
-)}
-  </main >
-  `
+document.querySelector("#cards").innerHTML =
+  createCard('24/11', 'Quinta-feira',
+    createGame("Suica", "07:00", "Camaroes") +
+    createGame("Uruguay", "10:00", "SouthCorean") +
+    createGame("Portugal", "13:00", "Gana") +
+    createGame("Brazil", "16:00", "Serbia")
+  ) +
+  createCard('28/11', 'Segunda-feira',
+    createGame("Camaroes", "07:00", "Serbia") +
+    createGame("SouthCorean", "10:00", "Gana") +
+    createGame("Suica", "13:00", "Brazil") +
+    createGame("Uruguay", "16:00", "Portugal")
+  ) +
+  createCard('29/11', 'Terça-feira',
+    createGame("Argentina", "07:00", "Britshi") +
+    createGame("Armenia", "10:00", "Hungary") +
+    createGame("Camaroes", "13:00", "Uruguay") +
+    createGame("Japan", "16:00", "Brazil")
+  )
