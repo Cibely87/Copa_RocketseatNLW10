@@ -6,7 +6,7 @@
 
 body {
   background-color: #121214;
-  background-image: url(./assents/bg.svg);
+  background-image: url(./assents/copafundo.jpg);
   background-position-x: center;
   background-position-y: -715px;
 }
@@ -39,7 +39,7 @@ header {
   padding: 32px 23px;
   text-align: center;
   background-color: #1d1c19;
-  border-bottom: 2px solid #f7dd43;
+  border-bottom: 2px solid #eb0a94;
   border-radius: 6px;
 }
 
@@ -49,12 +49,12 @@ header {
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid #d9ff00;
   border-radius: 6px;
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #f7dd43;
+  color: #eb0a94;
 }
 
 .card h2 span {
